@@ -1,0 +1,224 @@
+body{
+  background-color: black;
+}
+
+section{
+ background-color: black;
+}
+
+h1{
+  position: absolute;
+  top: 15%;
+ 
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: black;
+  font-size: 2em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  animation: slideRight 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+@keyframes slideRight {
+  0%{
+      transform: translateX(-200px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0px);
+      opacity: 1;
+  }
+  
+}
+h1 span{
+  display: inline-block;
+  animation: animate 1s  ease-in-out;
+
+}
+
+@keyframes animate{
+  0%{
+      opacity: 0%;
+      transform: rotateY(90deg);
+      filter: blur(10px);
+  }
+  100%{
+      opacity: 1;
+      transform: rotateY(0deg);
+      filter: blur(0px);
+}
+}
+h1 span:nth-child(1)
+{
+  animation-delay: 0.6s;
+}
+h1 span:nth-child(2)
+{
+  animation-delay: 1s;
+}
+h1 span:nth-child(3)
+{
+  animation-delay: 1.7s;
+}
+h1 span:nth-child(4)
+{
+  animation-delay: 2.3s;
+}
+h1 span:nth-child(5)
+{
+  animation-delay: 2.7s;
+}
+h1 span:nth-child(6)
+{
+  animation-delay: 3.2s;
+}
+h1 span:nth-child(7)
+{
+  animation-delay: 3.7s;
+}
+h1 span:nth-child(8)
+{
+  animation-delay: 4s;
+}
+h1 span:nth-child(9)
+{
+  animation-delay: 4.5s;
+}
+
+h1 span:nth-child(10)
+{
+  animation-delay: 5s;
+}
+
+h1 span:nth-child(11)
+{
+  animation-delay: 5.1s;
+}
+
+
+
+
+.container {
+  background: #fff;
+  margin-top: 5rem;
+  animation: slideTop 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+
+.our-team {
+  padding: 1.2rem 0.75rem;
+  background:black;
+  border-radius: 1rem;
+  text-align: center;
+  border: 0.5px solid black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
+    rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+}
+.our-team .pic {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: black;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.5s ease 0s;
+}
+.our-team:hover .pic {
+  background: #0EF;
+  border-radius: 50%;
+}
+.pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.our-team .title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0EF;
+  margin: 0 0 7px 0;
+}
+.our-team .post {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: red;
+  margin-bottom: 1rem;
+}
+.our-team .social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.our-team .social li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.our-team .social li a {
+  display: block;
+  width: 180px;
+  height: 40px;
+  line-height: 2rem;
+  border-radius: 15%;
+  font-size: 1rem;
+  color: #0EF;
+  border: 1px solid #60c5a8;
+  transition: all 0.5s ease 0s;
+  
+ 
+}
+
+button :hover{
+  box-shadow: 0 0 15px cyan,
+  0 0 25px cyan, 0 0 50px cyan,0 0 100px cyan,
+  0 0 200px cyan
+}
+
+.our-team .social li :hover{
+  box-shadow: 0 0 15px cyan,
+  0 0 25px cyan, 0 0 50px cyan,0 0 100px cyan,
+  0 0 200px cyan
+}
+
+.our-team:hover .social li a {
+  background: #0EF;
+  color: red;
+  font-weight: bold;
+}
+
+.our-team:hover .social li a :hover{
+  box-shadow: 0 0 15px cyan,
+  0 0 25px cyan, 0 0 50px cyan,0 0 100px cyan,
+  0 0 200px cyan
+}
+
+
+
+.social li a :hover{
+  box-shadow: 0 0 15px cyan,
+  0 0 25px cyan, 0 0 50px cyan,0 0 100px cyan,
+  0 0 200px cyan
+}
+
+@media only screen and (max-width: 992px) {
+  .our-team {
+    margin-bottom: 2rem;
+  }
+}
