@@ -8,6 +8,9 @@ import { ProjectComponent } from './project/project.component';
 
 const routes: Routes = [
   {
+    path:'',component:HomeComponent
+  },
+  {
     path:'home',component:HomeComponent
   },
   {
@@ -22,7 +25,7 @@ const routes: Routes = [
   {
     path:'project',component:ProjectComponent
   },
-
+ 
 ];
 
 @NgModule({

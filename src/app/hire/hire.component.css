@@ -161,15 +161,7 @@ p{
   border-right-style: none;
   border-bottom-style: none;
   border-left-style: none;
-  border-top-color: #767676;
-  border-right-color: #767676;
-  border-bottom-color: #767676;
-  border-left-color: #767676;
-  border-image-source: initial;
-  border-image-slice: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
+
   font-size: 18px;
   font-weight: 700;
   height: 50px;
